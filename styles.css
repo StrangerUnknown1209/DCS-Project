@@ -1,0 +1,57 @@
+/* Custom CSS for the navbar */
+
+.navbar-shrink {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.navbar-shrink .navbar-brand {
+    font-size: 1.25rem;
+}
+
+.navbar-shrink .nav-link {
+    font-size: 0.875rem;
+}
+
+.back {
+    background-image: url('https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ');
+    z-index: -11111;
+}
+
+.overlay {
+    opacity: 0.5;
+    background-color: #ccc;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1000;
+}
+
+.noscroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.scroll {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1010;
+}
+
+.noshow {
+    display: none;
+}

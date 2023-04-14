@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add User</title>
+</head>
+
+<body>
+    <form action="add_user.php" method="POST">
+        <label for="uName">Username:</label>
+        <input type="text" name="uName" required><br><br>
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" required><br><br>
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br><br>
+        <label for="mob">Contact Number:</label>
+        <input type="text" name="mob" required><br><br>
+        <label for="amtIn">Deposited amount:</label>
+        <input type="number" name="amtIn" required><br><br>
+        <label for="amtOut">Amount to be recieved:</label>
+        <input type="number" name="amtOut" required><br><br>
+        <label for="dateIn">Date of deposit:</label>
+        <input type="date" name="dateIn" required><br><br>
+        <label for="dateOut">Date of withdrawal:</label>
+        <input type="date" name="dateOut" required><br><br>
+        <label for="txnStat">Transaction status:</label>
+        <select name="txnStat">
+            <option value="0">Pending</option>
+            <option value="1">Successful</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
